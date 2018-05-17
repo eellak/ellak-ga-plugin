@@ -174,9 +174,15 @@ elseif($blog_id==29){
   }
   add_action("wp_enqueue_scripts", "add_snippet");
 }
-elseif($blog_id==33){
+elseif($blog_id==30){
   function add_snippet(){
     wp_enqueue_script("ellak-ga-script", "/wp-content/plugins/ellak-ga-plugin/js/scientix_ellak_gr.js");
+  }
+  add_action("wp_enqueue_scripts", "add_snippet");
+}
+elseif($blog_id==31){
+  function add_snippet(){
+    wp_enqueue_script("ellak-ga-script", "/wp-content/plugins/ellak-ga-plugin/js/robotics_ellak_gr.js");
   }
   add_action("wp_enqueue_scripts", "add_snippet");
 }
